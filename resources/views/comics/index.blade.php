@@ -13,6 +13,7 @@
                     <th scope="col">Data di Vendita</th>
                     <th scope="col">Tipo</th>
                     <th scope="col">Prezzo</th>
+                    <th scope="col">Azioni</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,6 +26,7 @@
                         <td>{{ $comic->sale_date }}</td>
                         <td>{{ $comic->type }}</td>
                         <td>{{ $comic->price }}</td>
+                        <td><a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary">GO!</a></td>
                     </tr>
                 @endforeach
             </tbody>

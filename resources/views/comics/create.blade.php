@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3">
                 <label for="sale_date" class="form-label @error('sale_date') is-invalid @enderror">Giorno di uscita</label>
-                <input type="text" class="form-control" id="sale_date" name="sale_date" maxlength="50"
+                <input type="date" class="form-control" id="sale_date" name="sale_date" maxlength="50"
                     value="{{ old('sale_date') }}">
                 @error('sale_date')
                     <div class="alert alert-danger">{{ $message }}</div>
